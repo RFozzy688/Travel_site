@@ -78,6 +78,41 @@ main{
 
 .content-item{
   display: flex;
+  align-items: center;
+}
+
+.content-item-text{
+  padding: 0 50px;
+  text-align: justify;
+}
+
+.content-item-img-big{
+  width: 500px;
+  height: 350px;
+  margin-bottom: -4px;
+}
+
+.title{
+  font-weight: 500;
+  font-size: 35px;
+}
+
+.sub-text{
+  font-size: 18px;
+}
+
+.description{
+  margin-bottom: 30px;
+}
+
+.content-item-img{
+  width: 300px;
+  margin-bottom: -4px;
+}
+
+.sub-title{
+  font-weight: 500;
+  font-size: 25px;
 }
 
 /* ------------------------------- FOOTER ------------------------------- */
