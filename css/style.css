@@ -1,0 +1,85 @@
+@import url("Normalize.css");
+@font-face {
+  font-family: "Garamond";
+  src: url(./font/EBGaramond-VariableFont_wght.ttf);
+}
+
+body{
+  font-family: 'Garamond';
+}
+
+h3{
+  margin: 0;
+}
+
+.container{
+  width: 1000px;
+  height: 100vh;
+  margin: 0 auto;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.line{
+  border-bottom: 1px solid #d8d6d6;
+}
+
+.btn{
+  display: inline;
+  padding: 5px 20px;
+  color: #a8a7a7;
+  border-radius: 5px;
+  border: 1px solid #d8d6d6;
+}
+
+.btn:hover{
+  color: white;
+  background-color: #d8d6d6;
+  cursor:pointer;
+}
+
+/* ------------------------------- HEADER ------------------------------- */
+header{
+  display: flex;
+  align-items: center;
+  padding: 10px 30px;
+}
+
+ul{
+  display: flex;
+  margin: 0;
+  list-style-type: none;
+}
+
+li{
+  padding-left: 20px;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+nav{
+  flex-grow: 1;
+}
+
+.icon{
+  width: 16px;
+  height: 16px;
+}
+
+/* ------------------------------- MAIN ------------------------------- */
+main{
+  flex: 1 1 100%;
+}
+
+.content-item{
+  display: flex;
+}
+
+/* ------------------------------- FOOTER ------------------------------- */
+footer{
+}
