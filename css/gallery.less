@@ -4,7 +4,38 @@
   background-image: @path;
   background-repeat: no-repeat;
   background-size: cover;
+  &:hover{
+    .gallery-photo-content{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      color: white;
+      padding: 0 20px;
+    }    
+    .photo-content-title{
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+    .photo-content-text{
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .photo-content-btn{
+      padding: 5px 20px;
+      border-radius: 5px;
+      border: 1px solid white;
+      &:hover{
+        background-color: white;
+        color: black;
+        cursor: pointer;
+      }
+    }
+  }
 }
+
+
 
 .photo4{
   .photo(0, 25%, url("/images/photo4.jpg"));
