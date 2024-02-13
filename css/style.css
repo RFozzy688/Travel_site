@@ -15,12 +15,10 @@ h3{
 
 .container{
   width: 1000px;
-  height: 100vh;
   margin: 0 auto;
   padding-top: 20px;
   display: flex;
   flex-direction: column;
-  
 }
 
 .line{
@@ -87,15 +85,18 @@ main{
   align-items: center;
 }
 
+.content-img-big{
+  width: 500px;
+  display: block;
+}
+.content-img{
+  width: 400px;
+  display: block;
+}
+
 .content-item-text{
   padding: 0 50px;
   text-align: justify;
-}
-
-.content-item-img-big{
-  width: 500px;
-  height: 350px;
-  margin-bottom: -4px;
 }
 
 .title{
@@ -109,11 +110,6 @@ main{
 
 .description{
   margin-bottom: 30px;
-}
-
-.content-item-img{
-  width: 300px;
-  margin-bottom: -4px;
 }
 
 .sub-title{
@@ -167,7 +163,10 @@ main{
 }
 
 /* ------------------------------- Features ------------------------------- */
-
+.features-line{
+  width: 100%;
+  border-bottom: 1px solid #d8d6d6;
+}
 .features{
   display: flex;
   flex-direction: column;
@@ -298,4 +297,66 @@ footer{
 }
 .copyright{
   margin-bottom: 20px;
+}
+
+/* ====================================================================== */
+/* =============================== MEDIA <=850 ======================== */
+/* ====================================================================== */
+@media screen and (max-width:850px) {
+  .social{
+    display: none;
+  }
+  .container{
+    align-items: center;
+  }
+  .content-img-md{
+    width: 500px;
+  }
+  .photo5-md, .photo6-md{
+    display: none;
+  }
+  .gallery-md{
+    height: 415px;
+  }
+  .gallery-photo-md{
+    justify-content: center;
+    position: relative;
+    &:hover{
+      .arrow-left{
+        display: block;
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: 150px;
+        left: -10px;
+      }
+      .arrow-right{
+        display: block;
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: 150px;
+        left: 96%;
+      }
+    }
+  }
+  .features-items-md{
+    width: 70%;
+  }
+  .vertical-line-md{
+    display: none;
+  }
+  .features-line{
+    display: none;
+  }
+  .line-md{
+    width: 100%;
+    border-bottom: 1px solid #d8d6d6;
+  }
+  .vertical-line-visibility-md{
+    border-right: 1px solid #d8d6d6;
+  }
+  .item-md{
+    flex: 0 1 49%;
+  }
 }

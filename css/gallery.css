@@ -134,3 +134,75 @@
   color: black;
   cursor: pointer;
 }
+@media screen and (max-width: 850px) {
+  .photo4 {
+    flex: 1 1 50%;
+    height: 100%;
+    background-image: url("/images/photo4.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 350px;
+  }
+  .photo4:hover .gallery-photo-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: white;
+    padding: 0 20px;
+  }
+  .photo4:hover .photo-content-title {
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  .photo4:hover .photo-content-text {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .photo4:hover .photo-content-btn {
+    padding: 5px 20px;
+    border-radius: 5px;
+    border: 1px solid white;
+  }
+  .photo4:hover .photo-content-btn:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+  }
+  .photo7 {
+    flex: 1 1 50%;
+    height: 100%;
+    background-image: url("/images/photo7.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 350px;
+  }
+  .photo7:hover .gallery-photo-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: white;
+    padding: 0 20px;
+  }
+  .photo7:hover .photo-content-title {
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  .photo7:hover .photo-content-text {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .photo7:hover .photo-content-btn {
+    padding: 5px 20px;
+    border-radius: 5px;
+    border: 1px solid white;
+  }
+  .photo7:hover .photo-content-btn:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+  }
+}
