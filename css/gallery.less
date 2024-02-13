@@ -1,0 +1,20 @@
+.photo(@grow, @width, @path){
+  flex: @grow 1 @width;
+  height: 100%;
+  background-image: @path;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.photo4{
+  .photo(0, 25%, url("/images/photo4.jpg"));
+}
+.photo5{
+  .photo(0, 200px, url("/images/photo5.jpg"));
+}
+.photo6{
+  .photo(1, 25%, url("/images/photo6.jpg"));
+}
+.photo7{
+  .photo(0, 25%, url("/images/photo7.jpg"));
+}

@@ -1,0 +1,28 @@
+.photo4 {
+  flex: 0 1 25%;
+  height: 100%;
+  background-image: url("/images/photo4.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.photo5 {
+  flex: 0 1 200px;
+  height: 100%;
+  background-image: url("/images/photo5.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.photo6 {
+  flex: 1 1 25%;
+  height: 100%;
+  background-image: url("/images/photo6.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.photo7 {
+  flex: 0 1 25%;
+  height: 100%;
+  background-image: url("/images/photo7.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
