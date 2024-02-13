@@ -147,7 +147,57 @@
           </div>
         </div>
       </div>
-      <div></div>
+      <div class="write-to-us">
+        <div class="sub-title">Write to us</div>
+        <form action="/search" method="get">
+          <div class="input-block">
+            <div class="block">
+              <label for="name">Name:</label><br>
+              <input type="text" name="name" id="name">
+            </div>
+            <div class="block">
+              <label for="email">Email:</label><br>
+              <input type="email" name="email" id="email">
+            </div>
+            <div class="block">
+              <label for="phone">Phone:</label><br>
+              <input type="number" name="phone" id="phone">
+            </div>            
+          </div>
+          <div class="contact-me">
+            <span class="via">Contact me via:</span>
+            <input type="radio" name="contact" id="email_r">
+            <label class="label-radio" for="email_r">Email</label>
+            <input type="radio" name="contact" id="phone_r">
+            <label class="label-radio" for="phone_r">Phone</label>
+            <input type="radio" name="contact" id="telegram_r">
+            <label class="label-radio" for="telegram_r">Telegram</label>
+          </div>
+          <div class="topic">
+            <label for="">Topic:</label><br>
+            <select name="topic-s" id="topic_s">
+              <option value="">1 Lorem, ipsum.</option>
+              <option value="">2 Lorem, ipsum.</option>
+              <option value="">3 Lorem, ipsum.</option>
+              <option value="">4 Lorem, ipsum.</option>
+              <option value="">5 Lorem, ipsum.</option>
+            </select>
+          </div>
+          <div class="message">
+            <label for="">Message:</label><br>
+            <textarea class="message-textarea" name="message-a" id="message_a" cols="60" rows="10"></textarea>
+          </div>
+          <div class="send">
+            <div>
+              <input type="checkbox" name="checking" id="checking">
+              <label class="i-am" for="">I am a human</label>
+            </div>
+            <div>
+              <input class="btn-send" type="submit" value="Send">
+            </div>
+          </div>
+        </form>
+      </div>
     </main>
     <footer>
       <div class="line"></div>
