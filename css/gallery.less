@@ -35,6 +35,43 @@
   }
 }
 
+.photo-sm(@grow, @width, @path){
+  flex: @grow 0 @width;
+  height: 350px;
+  background-image: @path;
+  background-repeat: no-repeat;
+  background-size: cover;
+  &:hover{
+    .gallery-photo-content{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      color: white;
+      padding: 0 100px;
+    }    
+    .photo-content-title{
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+    .photo-content-text{
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .photo-content-btn{
+      padding: 5px 20px;
+      border-radius: 5px;
+      border: 1px solid white;
+      &:hover{
+        background-color: white;
+        color: black;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
 
 
 .photo4{
@@ -59,5 +96,11 @@
   .photo7{
     .photo(1, 50%, url("/images/photo7.jpg"));
     height: 350px;
+  }
+}
+
+@media screen and (max-width:600px) {
+  .photo4{
+    .photo-sm(1, 500px, url("/images/photo4.jpg"));
   }
 }

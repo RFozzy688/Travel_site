@@ -43,6 +43,11 @@ h3{
 /* ====================================================================== */
 /* =============================== HEADER =============================== */
 /* ====================================================================== */
+
+.burger-menu{
+  display: none;
+}
+
 header{
   display: flex;
   align-items: center;
@@ -227,13 +232,14 @@ main{
   margin-right: 30px;
 }
 .via{
-  margin-right: 5px;
+  margin-right: 10px;
 }
 .label-radio{
   margin-right: 30px;
   margin-left: 5px;
 }
 .contact-me{
+  display: flex;
   margin-bottom: 20px;
 }
 .topic{
@@ -312,7 +318,7 @@ footer{
   .content-img-md{
     width: 500px;
   }
-  .photo5-md, .photo6-md{
+  .photo-md{
     display: none;
   }
   .gallery-md{
@@ -358,5 +364,93 @@ footer{
   }
   .item-md{
     flex: 0 1 49%;
+  }
+}
+
+/* ====================================================================== */
+/* =============================== MEDIA <=600 ========================== */
+/* ====================================================================== */
+
+@media screen and (max-width:600px) {
+  .menu-sm{
+    display: none;
+  }
+  .header-sm{
+    margin-bottom: 20px;
+  }
+  .burger-menu{
+    display: block;
+  }
+  nav{
+    flex-grow: 0;
+  }
+  .header-title-sm{
+    margin-right: 200px;
+  }
+  .line-sm{
+    display: none;
+  }
+  .content-sm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .content-item-sm{
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+    margin-bottom: 40px;
+  }
+  .content-img-sm{
+    order: -1;
+    margin-bottom: 20px;
+  }
+  .photo-sm{
+    display: none;
+  }
+  .gallery-sm{
+    width: 500px;
+  }
+  .gallery-photo-sm{
+    justify-content: center;
+    position: relative;
+    &:hover{
+      .arrow-right-sm{
+        display: block;
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: 150px;
+        left: 92%;
+      }
+    }
+  }
+  .vertical-line-sm{
+    display: none;
+  }
+  .features-line-sm{
+    width: 100%;
+    border-bottom: 1px solid #d8d6d6;
+  }
+  .features-items-sm{
+    width: 300px;
+  }
+  .item-sm{
+    flex: 0 1 100%;
+  }
+  .write-to-us-sm{
+    width: 300px;
+  }
+  .input-block-sm{
+    flex-direction: column;
+  }
+  .block-sm{
+    width: 300px;
+  }
+  .via-sm{
+    margin-bottom: 10px;
+  }
+  .contact-me-sm{
+    flex-direction: column;
   }
 }

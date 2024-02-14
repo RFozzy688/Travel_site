@@ -206,3 +206,39 @@
     cursor: pointer;
   }
 }
+@media screen and (max-width: 600px) {
+  .photo4 {
+    flex: 1 0 500px;
+    height: 350px;
+    background-image: url("/images/photo4.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .photo4:hover .gallery-photo-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: white;
+    padding: 0 100px;
+  }
+  .photo4:hover .photo-content-title {
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  .photo4:hover .photo-content-text {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .photo4:hover .photo-content-btn {
+    padding: 5px 20px;
+    border-radius: 5px;
+    border: 1px solid white;
+  }
+  .photo4:hover .photo-content-btn:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+  }
+}
